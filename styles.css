@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://elegantui.netlify.app/styles.css');
+
+html{
+    font-size: 100%;
+    font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-primary:#991b1b;
+    --color-secondary:antiquewhite;
+}
+
+.wrapper-landing{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.section-header{
+    width:100%;
+    min-height: 6rem;
+    max-height:10%;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.logo-title{
+    max-width:15%;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-product{
+    flex-grow:1;
+    justify-content: space-around;
+}
+
+.search-bar{
+    display:flex;
+    flex-wrap: wrap;
+    width:70%;
+    margin: auto;
+}
+
+.search-bar input{
+    flex-grow: 1;
+}
+
+.search-bar input[type=text] {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: 0.2rem solid var(--color-primary);
+    background: var(--color-white);
+    border-radius: 5px;
+}
+  
+.section-header button,
+.primary-btn-link{
+    background-color: var(--color-secondary);
+    color:var(--color-primary);
+    padding:0.1rem 0.1rem;
+    margin:0.2rem 0.2rem;
+    width:auto;
+}
+
+.search-bar button {
+    font-size: 1.25rem;
+    border-left: none; 
+    cursor: pointer;
+}
+
+.color-pri{
+    color: var(--color-primary);
+}
+
+.header-utilities{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: auto;
+      gap:1rem;
+}
+
+.header-utilities .primary-btn-icon{
+    font-size: 1.25rem;
+}
+
+.section-main{
+    width:100%;
+    min-height:50rem; 
+}
+
+.main-content{
+    margin:auto;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:4rem;
+}
+
+.tabs-main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:var(--color-primary);
+    justify-content: space-evenly;
+}
+
+.btn-n-border{
+    border:none;
+    width:auto;
+}
+
+.btn-tabs{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.section-footer{
+    margin-top: 3rem;
+    min-height: 15rem;
+    height:10%;
+    background-color: var(--color-secondary);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:0.5rem
+}
+
+.footer-headings{
+    margin-bottom: 0.5rem;
+}
+
+.footer-column button:hover,
+.container-title button{
+    text-decoration:underline;
+}
+
+.footer-tagline{
+    margin: auto;
+}
+
+.container-prod{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    border-radius: 0.5rem;
+    width:80%; 
+    align-items: center;
+    margin:auto;
+    padding: 1rem;
+    
+}
+
+.container-mini-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:auto;
+    align-items: center;
+    gap:0.75rem;
+}
+
+.container-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%
+}
+
+.container-title h2{
+    flex-grow: 1;
+}
+
+.container-title button{
+    background-color: var(--color-white);
+}

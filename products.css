@@ -1,0 +1,13 @@
+.card-prod-mini {
+  max-width: 15rem;
+  min-height:15rem;
+  height:auto;
+}
+
+.card-prod-header{
+    margin:0.1rem 0.1rem;
+}
+
+.card-prod-image{
+    min-height: 8rem;
+}
