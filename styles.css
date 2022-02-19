@@ -2,7 +2,6 @@
 @import url('https://elegantui.netlify.app/styles.css');
 
 html{
-    font-size: 100%;
     font-family: "Noto Sans", sans-serif;
     scroll-behavior: smooth;
 }
@@ -16,19 +15,16 @@ html{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
 }
 
 .header{
-    width:100%;
     min-height: 6rem;
-    max-height:10%;
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap:1rem;
+    padding: 0;
 }
 
 .logo-title{
@@ -66,8 +62,8 @@ html{
 .primary-btn-link{
     background-color: var(--color-secondary);
     color:var(--color-primary);
-    padding:0.1rem 0.1rem;
-    margin:0.2rem 0.2rem;
+    padding:0.1rem;
+    margin:0.2rem;
     width:auto;
 }
 
@@ -101,7 +97,6 @@ html{
 
 .main-content{
     margin:auto;
-    height: 100%;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
