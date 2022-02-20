@@ -1,0 +1,13 @@
+.card-horizontal{
+    width: 65rem;
+    max-height:28rem;
+    box-shadow: 0 1rem 1srem 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-wishlist{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:2rem;
+}

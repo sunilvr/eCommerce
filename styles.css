@@ -34,6 +34,10 @@ html{
     cursor: pointer;
 }
 
+.logo-title button a span:last-child{
+    color:black;
+}
+
 .search-product{
     flex-grow:1;
     justify-content: space-around;
@@ -170,7 +174,6 @@ html{
     align-items: center;
     margin:auto;
     padding: 1rem;
-    
 }
 
 .container-mini-cards{
