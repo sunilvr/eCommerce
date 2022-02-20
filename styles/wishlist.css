@@ -1,7 +1,5 @@
-.card-horizontal{
-    width: 65rem;
-    max-height:28rem;
-    box-shadow: 0 1rem 1srem 0 rgba(0, 0, 0, 0.2);
+.card-wishlist{
+    width: 60rem;
 }
 
 .container-wishlist{
@@ -11,3 +9,8 @@
     align-items: center;
     gap:2rem;
 }
+
+.card-wishlist-image{
+    width: 50%;
+    max-height: 90%;
+  }

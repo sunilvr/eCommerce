@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://elegantui.netlify.app/styles.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 
 html{
     font-family: "Noto Sans", sans-serif;
@@ -7,8 +8,10 @@ html{
 }
 
 :root{
-    --color-primary:#991b1b;
-    --color-secondary:antiquewhite;
+    --color-primary:#16a34a;
+    --color-secondary:#bbf7d0;
+    --color-white:white;
+    --color-black:black;
 }
 
 .wrapper-landing{
@@ -18,7 +21,7 @@ html{
 }
 
 .header{
-    min-height: 6rem;
+    min-height: 5rem;
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: row;
@@ -35,7 +38,7 @@ html{
 }
 
 .logo-title button a span:last-child{
-    color:black;
+    color:var(--color-black);
 }
 
 .search-product{
@@ -112,7 +115,8 @@ html{
     flex-direction: row;
     flex-wrap: wrap;
     background-color:var(--color-primary);
-    justify-content: space-evenly;
+    justify-content: center;
+    width:100%;
 }
 
 .btn-n-border{
@@ -120,9 +124,15 @@ html{
     width:auto;
 }
 
+.btn-n-bg{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: var(--color-black);
+}
+
 .btn-tabs{
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-black);
 }
 
 .footer{
@@ -156,7 +166,8 @@ html{
 }
 
 .footer-column button:hover,
-.container-title button{
+.container-title button,
+.btn-tabs:hover{
     text-decoration:underline;
 }
 
@@ -198,4 +209,8 @@ html{
 
 .container-title button{
     background-color: var(--color-white);
+}
+
+.primary-btn-icon{
+    color: var(--color-primary)
 }
