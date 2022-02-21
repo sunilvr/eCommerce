@@ -23,7 +23,7 @@
 }
 
 .main-login .terms{
-    color:dodgerblue;
+    color:var(--color-blue);
 }
 
 .main-login button{
