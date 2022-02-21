@@ -1,0 +1,16 @@
+.card-wishlist{
+    width: 60rem;
+}
+
+.container-wishlist{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:2rem;
+}
+
+.card-wishlist-image{
+    width: 50%;
+    max-height: 90%;
+  }

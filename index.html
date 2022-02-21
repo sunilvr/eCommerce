@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fitFactory</title>
     <link href="styles.css" rel="stylesheet" />
-    <link href="products.css" rel="stylesheet" />
+    <link href="/styles/products.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -16,10 +16,15 @@
     <div class="wrapper-landing">
         <header class="header">
             <div class="logo-title">
-                <button class="btn-n-border"><h1><span class=" txt-italic">fit</span><span class="p-xlg txt-italic"> factory</span></h1></button>
+                <button class="btn-n-border">
+                    <a class="color-pri" href="index.html">
+                        <h1>
+                            <span class=" txt-italic">fit</span><span class="p-xlg txt-italic"> factory</span>
+                        </h1>
+                    </a>
+                </button>
             </div>
             <div class="search-product">
-                <!-- The form -->
                 <form class="search-bar">
                     <input type="text" placeholder="Search for products, brands and more" name="search"></input>
                     <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
@@ -29,29 +34,35 @@
                 <button class="primary-btn-link p-lg txt-bold">Account</button>
                 <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
                 <button class="primary-btn-icon">
-                    <span class="badge-icon">
-                        <span class="badge badge-green p-sm">12</span>
-                        <i class="fas fa-heart" aria-hidden="true"></i>
-                    </span> 
+                    <a class="color-pri" href="wishlist.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">12</span>
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </span> 
+                    </a>
                 </button>
                 <button class="primary-btn-icon">
-                    <span class="badge-icon">
-                        <span class="badge badge-green p-sm">4</span>
-                        <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                    </span> 
-                    <span class="txt-bold p-lg">Cart</span>
+                    <a class="color-pri" href="cart.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">4</span>
+                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                        </span> 
+                        <span class="txt-bold p-lg">Cart</span>
+                    </a>
                 </button>
             </div>
         </header>
         <main class="main">
             <div class="main-content">
                     <div class="tabs-main">
+                        <button class="btn-n-border btn-tabs p-lg txt-bold"><i class="fas fa-bars"></i> All</button>
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Nutrition</button>                        
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Apparel</button>
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Gyms</button>
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Training</button>
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Stores</button>
                         <button class="btn-n-border btn-tabs p-lg txt-bold">Equipments</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Coupons</button>
                     </div>
                     <div class="container-prod">
                         <div class="container-title">
