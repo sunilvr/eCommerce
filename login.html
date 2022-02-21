@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitFactory</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="/styles/products.css" rel="stylesheet" />
+    <link href="/styles/wishlist.css" rel="stylesheet" />
+    <link href="/styles/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper-landing">
+        <header class="header">
+            <div class="logo-title">
+                <button class="btn-n-border">
+                    <a class="color-pri" href="index.html">
+                        <h1>
+                            <span class="txt-italic">fit</span><span class="p-xlg txt-italic color-b"> factory</span>
+                        </h1>
+                    </a>
+                </button>
+            </div>
+            <div class="search-product">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more" name="search"></input>
+                    <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-utilities">
+                <button class="primary-btn-link p-lg txt-bold">
+                    <a class="color-pri" href="login.html">Account</a>
+                </button>
+                <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
+                <button class="primary-btn-icon">
+                    <a class="color-pri" href="wishlist.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">12</span>
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </span> 
+                    </a>
+                </button>
+                <button class="primary-btn-icon">
+                    <a class="color-pri" href="cart.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">4</span>
+                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                        </span> 
+                        <span class="txt-bold p-lg">Cart</span>
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main class="main-login">
+            <div class="form-login">
+                <div class="card-vertical">
+                  <p class="p-xlg txt-bold color-pri">Login</p>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me.
+                    <a class="forgot-pwd" href="#">Forgot Password ?</a>
+                  </label>         
+                  <button class="btn txt-bold color-pri p-lg">Sign In</button>
+                  <p class="p-md">Create new account >> <a class="color-pri txt-md" href="signup.html">SignUp</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
