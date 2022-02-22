@@ -1,45 +1,42 @@
 @import url('https://elegantui.netlify.app/styles.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-
 html{
     font-family: "Noto Sans", sans-serif;
     scroll-behavior: smooth;
 }
 
 :root{
-    --color-primary:#16a34a;
+    --color-primary:#15803d;
     --color-secondary:#bbf7d0;
+    --color-mild-green:#4ade80;
     --color-white:white;
     --color-black:black;
     --color-blue:dodgerblue;
 }
 
-.wrapper-landing{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .header{
-    min-height: 5rem;
+    height: 7rem;
     background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0;
 }
 
 .logo-title{
     max-width:15%;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 .logo-title button a span:last-child{
     color:var(--color-black);
+}
+
+.logo-title button{
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .search-product{
@@ -48,8 +45,6 @@ html{
 }
 
 .search-bar{
-    display:flex;
-    flex-wrap: wrap;
     width:70%;
     margin: auto;
 }
@@ -86,9 +81,6 @@ html{
 }
 
 .header-utilities{
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       align-items: center;
       margin-left: auto;
       gap:1rem;
@@ -105,19 +97,13 @@ html{
 
 .main-content{
     margin:auto;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap:4rem;
 }
 
-.tabs-main{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color:var(--color-primary);
+.main-tabs{
+    background-color:var(--color-mild-green);
     justify-content: center;
     width:100%;
+    height: 2.5rem;
 }
 
 .btn-n-border{
@@ -131,9 +117,11 @@ html{
     color: var(--color-black);
 }
 
-.btn-tabs{
-    background-color: var(--color-primary);
+.main-tabs .btn-tabs{
+    background-color:var(--color-mild-green);
     color: var(--color-black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;   
 }
 
 .footer{
@@ -141,23 +129,14 @@ html{
     min-height: 15rem;
     height:10%;
     background-color: var(--color-secondary);
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .footer-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1rem;
 }
 
 .footer-column{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     margin-top:0.5rem
 }
@@ -176,10 +155,8 @@ html{
     margin: auto;
 }
 
-.container-prod{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container-prod,
+.container-prod-mini{
     box-shadow: 0 0 10px var(--color-box-shadow);
     border-radius: 0.5rem;
     width:80%; 
@@ -188,19 +165,17 @@ html{
     padding: 1rem;
 }
 
+.container-prod{
+    margin-top: 4rem;
+}
+
 .container-mini-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     height:auto;
     align-items: center;
     gap:0.75rem;
 }
 
 .container-title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     width: 100%
 }
 
@@ -215,3 +190,42 @@ html{
 .primary-btn-icon{
     color: var(--color-primary)
 }
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-secondary);
+    min-width: 8rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: var(--color-primary);
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  

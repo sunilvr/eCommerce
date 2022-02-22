@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper-landing">
-        <header class="header">
+    <div class="flex-column">
+        <header class="header flex-row">
             <div class="logo-title">
                 <button class="btn-n-border">
                     <a class="color-pri" href="index.html">
@@ -26,15 +26,23 @@
                 </button>
             </div>
             <div class="search-product">
-                <form class="search-bar">
+                <form class="search-bar flex-row">
                     <input type="text" placeholder="Search for products, brands and more" name="search"></input>
                     <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <div class="header-utilities">
-                <button class="primary-btn-link p-lg txt-bold">
-                    <a class="color-pri" href="login.html">Account</a>
-                </button>
+            <div class="header-utilities flex-row">
+                <div class="dropdown">
+                    <button class="primary-btn-link p-lg">
+                        <span class="badge-icon">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </span> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Logout</a>
+                        <a href="signup.html">Register New</a>
+                    </div>
+                </div>
                 <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
                 <button class="primary-btn-icon">
                     <a class="color-pri" href="wishlist.html">
@@ -57,12 +65,14 @@
         </header>
         
         <main class="main">
-            <div class="main-content">
-                <div class="tabs-main">
+            <div class="main-content flex-column">
+                <div class="main-tabs flex-row">
                     <button class="btn-n-border btn-tabs p-lg txt-bold">
                         <a href="index.html"><i class="fa fa-home"></i> Home</a>
                     </button>
-                    <button class="btn-n-border btn-tabs p-lg txt-bold">Nutrition</button>                        
+                    <button class="btn-n-border btn-tabs p-lg txt-bold">
+                        <a href="products.html">Nutrition</a>
+                    </button>                      
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Apparel</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Gyms</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Training</button>
@@ -70,9 +80,9 @@
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Equipments</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Coupons</button>
                 </div>
-                <div class="cart-main">
+                <div class="main-cart">
                     <div class="cart-items">
-                        <div class="container-cart">
+                        <div class="container-cart flex-column">
                             <div class="card-horizontal card-cart">
                                 <div class="card-cart-image">
                                     <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
@@ -183,19 +193,19 @@
                         <div class="text-only">
                             <div class="card-h-content">
                                 <p class="p-xlg txt-bold">Cart Summary</p>
-                                <div class="cart-price p-lg txt-bold">
+                                <div class="flex-row cart-price p-lg txt-bold">
                                     <span>Price</span>
                                     <span>$ 76.8</span>
                                 </div>
-                                <div class="cart-price p-lg txt-bold">
+                                <div class="flex-row cart-price p-lg txt-bold">
                                     <span>Discount</span>
                                     <span class="color-pri">$ 16.5</span>
                                 </div>
-                                <div class="cart-price p-lg txt-bold">
+                                <div class="flex-row cart-price p-lg txt-bold">
                                     <span>Delivery Charges</span>
                                     <span class="color-pri">FREE</span>
                                 </div>
-                                <div class="cart-price p-lg txt-bold">
+                                <div class="flex-row cart-price p-lg txt-bold">
                                     <span>Total Amount</span>
                                     <span>$ 60.3</span>
                                 </div>
@@ -210,9 +220,9 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-column">
+        <footer class="footer flex-column">
+            <div class="footer-content flex-row ">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Get to know us</span>
                     <button class="primary-btn-link p-md txt-bold">Contact</button>
                     <button class="primary-btn-link p-md txt-bold">About Us</button>
@@ -220,21 +230,21 @@
                     <button class="primary-btn-link p-md txt-bold">Press Releases</button>
                     <button class="primary-btn-link p-md txt-bold">Stories</button>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Help</span>
                     <button class="primary-btn-link p-md txt-bold">Payments</button>
                     <button class="primary-btn-link p-md txt-bold">Shipping</button>
                     <button class="primary-btn-link p-md txt-bold">Cancellations & Returns</button>
                     <button class="primary-btn-link p-md txt-bold">FAQs</button>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Policy</span>
                     <button class="primary-btn-link p-md txt-bold">Returns</button>
                     <button class="primary-btn-link p-md txt-bold">Terms of Use</button>
                     <button class="primary-btn-link p-md txt-bold">Security</button>
                     <button class="primary-btn-link p-md txt-bold">Privacy</button>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Social</span>
                     <button class="primary-btn-link p-md txt-bold">Facebook</button>
                     <button class="primary-btn-link p-md txt-bold">Instagram</button>

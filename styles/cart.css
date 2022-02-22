@@ -1,4 +1,4 @@
-.cart-main{
+.main-cart{
     display:grid;
     grid-gap:1rem;
     grid-template-columns: 1fr 28rem;
@@ -6,16 +6,15 @@
 }
 
 .container-cart{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     gap:2rem;
+    margin-top: 4rem;
 }
 
 .cart-summary{
     margin-right: 3rem;
     height:20rem;
+    margin-top: 4rem;
 }
 
 .card-cart{
@@ -59,10 +58,5 @@
 }
 
 .cart-summary .cart-price{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
