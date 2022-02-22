@@ -27,16 +27,11 @@ html{
     margin-left: 1rem;
     font-size: 1rem;
     cursor: pointer;
+    padding:0;
 }
 
-.logo-title button a span:last-child{
-    color:var(--color-black);
-}
-
-.logo-title button{
-    margin: 0;
-    padding: 0;
-    height: auto;
+.logo-title h2{
+    margin:0;
 }
 
 .search-product{
@@ -145,7 +140,7 @@ html{
     margin-bottom: 0.5rem;
 }
 
-.footer-column button:hover,
+.footer-column a:hover,
 .container-title button,
 .btn-tabs:hover{
     text-decoration:underline;
@@ -153,6 +148,10 @@ html{
 
 .footer-tagline{
     margin: auto;
+}
+
+.footer-column a{
+    margin:0.25rem;
 }
 
 .container-prod,
@@ -228,4 +227,7 @@ html{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-  
+
+.txt-pri{
+    color: var(--color-primary);
+}
