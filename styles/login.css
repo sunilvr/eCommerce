@@ -1,0 +1,39 @@
+.form-login{
+    z-index: 3;
+}
+
+.form-login input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 0.2rem solid var(--color-primary);
+    background: var(--color-white);
+    border-radius: 5px;
+}
+
+.main-login{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.card-vertical{
+    gap:0.4rem;
+    height:30rem;
+    padding:1rem;
+    margin: 2rem 2rem 30rem 0; 
+}
+
+.card-login{
+    height:26rem;
+}
+
+.main-login .terms{
+    color:var(--color-blue);
+}
+
+.main-login button{
+    background-color: var(--color-secondary);
+}
+
+.main-login .forgot-pwd{
+    margin-left: 2rem;;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitFactory</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="/styles/products.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex-column">
+        <header class="header flex-row">
+            <div class="logo-title">
+                <a href="index.html">
+                    <h2 class="h2-text">
+                        <span class="txt-italic txt-pri">fit</span><span class="p-xlg txt-italic color-black"> factory</span>
+                    </h2>
+                </a>
+            </div>
+            <div class="search-product">
+                <form class="search-bar flex-row ">
+                    <input type="text" placeholder="Search for products, brands and more" name="search"></input>
+                    <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-utilities flex-row ">
+                <div class="dropdown">
+                    <button class="primary-btn-link p-lg">
+                        <span class="badge-icon">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </span> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Logout</a>
+                        <a href="signup.html">Register New</a>
+                    </div>
+                </div>
+                <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
+                <button class="primary-btn-icon">
+                    <a class="color-pri" href="wishlist.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">12</span>
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </span> 
+                    </a>
+                </button>
+                <button class="primary-btn-icon">
+                    <a class="color-pri" href="cart.html">
+                        <span class="badge-icon">
+                            <span class="badge badge-green p-sm">4</span>
+                            <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                        </span> 
+                        <span class="txt-bold p-lg">Cart</span>
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-content flex-column">
+                    <div class="main-tabs flex-row">
+                        <button class="btn-n-border btn-tabs p-lg txt-bold"><i class="fas fa-bars"></i> All</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">
+                            <a href="products.html">Nutrition</a>
+                        </button>                        
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Apparel</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Gyms</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Training</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Stores</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Equipments</button>
+                        <button class="btn-n-border btn-tabs p-lg txt-bold">Coupons</button>
+                    </div>
+                    
+                    <div class="container-prod flex-column">
+                        <div class="container-title flex-row">
+                            <h2 class="products-trending h4-text">Deals of the Day</h2>
+                            <button class="btn-n-border p-lg txt-bold color-pri">
+                                <a class="color-pri" href="products.html">View All</a>
+                            </button>
+                        </div>
+                        <div class="container-mini-cards flex-row">
+                            <div class="card-vertical card-prod-mini">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-green">Best Seller</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 60% off</p>
+                                    <p class="card-price p-sm">Limited Stock..!!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-red">New Arrival</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition2.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 50% off</p>
+                                    <p class="card-price p-sm">Selling Fast! Grab Now!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-blue">Trending</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 40% off</p>
+                                    <p class="card-price p-sm">Top Selling!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-orange">Latest</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition2.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 30% off</p>
+                                    <p class="card-price p-sm">24 Hours Delivery!!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-green">Best Seller</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 40% off</p>
+                                    <p class="card-price p-sm">Top Selling!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="container-prod flex-column">
+                        <div class="container-title flex-row">
+                            <h2 class="products-trending h4-text">Recommended for you</h2>
+                            <button class="btn-n-border p-lg txt-bold">
+                                <a class="color-pri" href="products.html">View All</a></button>
+                        </div>
+                        <div class="container-mini-cards flex-row">
+                            <div class="card-vertical card-prod-mini">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-green">Best Seller</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 60% off</p>
+                                    <p class="card-price p-sm">Limited Stock..!!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-red">New Arrival</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition2.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 50% off</p>
+                                    <p class="card-price p-sm">Selling Fast! Grab Now!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-blue">Trending</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 40% off</p>
+                                    <p class="card-price p-sm">Top Selling!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-orange">Latest</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition2.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 30% off</p>
+                                    <p class="card-price p-sm">24 Hours Delivery!!</p>
+                                </div>
+                            </div>
+                            <div class="card-vertical card-prod-mini ">
+                                <div class="card-v-header card-prod-header">
+                                    <span class="badge badge-green">Best Seller</span>
+                                </div>
+                                <div class="card-v-image card-prod-image">
+                                    <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <p class="txt-bold p-lg">Nutrition, Supplements & more</h2>
+                                    <p class="card-price p-lg">Up to 40% off</p>
+                                    <p class="card-price p-sm">Top Selling!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+        <footer class="footer flex-column">
+            <div class="footer-content flex-row">
+                <div class="footer-column flex-column">
+                    <span class="footer-headings txt-bold p-lg">Get to know us</span>
+                    <a class="txt-pri p-md txt-bold" href="">Contact</a>
+                    <a class="txt-pri p-md txt-bold" href="">About Us</a>
+                    <a class="txt-pri p-md txt-bold" href="">Careers</a>
+                    <a class="txt-pri p-md txt-bold" href="">Press Releases</a>
+                    <a class="txt-pri p-md txt-bold" href="">Stories</a>
+                </div>
+                <div class="footer-column flex-column">
+                    <span class="footer-headings txt-bold p-lg">Help</span>
+                    <a class="txt-pri p-md txt-bold" href="">Payments</a>
+                    <a class="txt-pri p-md txt-bold" href="">Shipping</a>
+                    <a class="txt-pri p-md txt-bold" href="">Cancellations & Returns</a>
+                    <a class="txt-pri p-md txt-bold" href="">FAQs</a>
+                </div>
+                <div class="footer-column flex-column">
+                    <span class="footer-headings txt-bold p-lg">Policy</span>
+                    <a class="txt-pri p-md txt-bold" href="">Returns</a>
+                    <a class="txt-pri p-md txt-bold" href="">Terms of Use</a>
+                    <a class="txt-pri p-md txt-bold" href="">Security</a>
+                    <a class="txt-pri p-md txt-bold" href="">Privacy</a>
+                </div>
+                <div class="footer-column flex-column">
+                    <span class="footer-headings txt-bold p-lg">Social</span>
+                    <a class="txt-pri p-md txt-bold" href="">Facebook</a>
+                    <a class="txt-pri p-md txt-bold" href="">Instagram</a>
+                    <a class="txt-pri p-md txt-bold" href="">Twitter</a>
+                    <a class="txt-pri p-md txt-bold" href="">Youtube</a>
+                    <a class="txt-pri p-md txt-bold" href="">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-tagline">
+                <p class="p-sm txt-bold txt-italic"> Copyrights reserved by the FitFactory, Inc. or its affiliates </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
