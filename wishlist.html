@@ -14,27 +14,33 @@
     <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper-landing">
-        <header class="header">
+    <div class="flex-column">
+        <header class="header flex-row">
             <div class="logo-title">
-                <button class="btn-n-border">
-                    <a class="color-pri" href="index.html">
-                        <h1>
-                            <span class="txt-italic">fit</span><span class="p-xlg txt-italic color-b"> factory</span>
-                        </h1>
-                    </a>
-                </button>
+                <a href="index.html">
+                    <h2 class="h2-text">
+                        <span class="txt-italic txt-pri">fit</span><span class="p-xlg txt-italic color-black"> factory</span>
+                    </h2>
+                </a>
             </div>
             <div class="search-product">
-                <form class="search-bar">
+                <form class="flex-row search-bar">
                     <input type="text" placeholder="Search for products, brands and more" name="search"></input>
                     <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <div class="header-utilities">
-                <button class="primary-btn-link p-lg txt-bold">
-                    <a class="color-pri" href="login.html">Account</a>
-                </button>
+            <div class="header-utilities flex-row">
+                <div class="dropdown">
+                    <button class="primary-btn-link p-lg">
+                        <span class="badge-icon">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </span> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Logout</a>
+                        <a href="signup.html">Register New</a>
+                    </div>
+                </div>
                 <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
                 <button class="primary-btn-icon">
                     <a class="color-pri" href="wishlist.html">
@@ -56,12 +62,14 @@
             </div>
         </header>
         <main class="main">
-            <div class="main-content">
-                <div class="tabs-main">
+            <div class="main-content flex-column">
+                <div class="main-tabs flex-row">
                     <button class="btn-n-border btn-tabs p-lg txt-bold">
                         <a href="index.html"><i class="fa fa-home"></i> Home</a>
                     </button>
-                    <button class="btn-n-border btn-tabs p-lg txt-bold">Nutrition</button>                        
+                    <button class="btn-n-border btn-tabs p-lg txt-bold">
+                        <a href="products.html">Nutrition</a>
+                    </button>                       
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Apparel</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Gyms</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Training</button>
@@ -69,11 +77,11 @@
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Equipments</button>
                     <button class="btn-n-border btn-tabs p-lg txt-bold">Coupons</button>
                 </div>
-                <div class="container-prod">
-                    <div class="container-title">
+                <div class="container-prod flex-column">
+                    <div class="container-title flex-row">
                         <h2 class="products-trending h4-text">Your wishlist</h2>
                     </div>
-                    <div class="container-wishlist">
+                    <div class="container-wishlist flex-column">
                         <div class="card-horizontal card-wishlist">
                             <div class="card-h-image card-wishlist-image">
                                 <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
@@ -153,12 +161,14 @@
                     </div>
                 </div>
 
-                <div class="container-prod">
-                    <div class="container-title">
+                <div class="container-prod flex-column">
+                    <div class="container-title flex-row">
                         <h2 class="products-trending h4-text">More items to explore</h2>
-                        <button class="btn-n-border p-lg txt-bold color-pri">View All</button>
+                        <button class="btn-n-border p-lg txt-bold color-pri">
+                            <a class="color-pri" href="products.html">View All</a>
+                        </button>
                     </div>
-                    <div class="container-mini-cards">
+                    <div class="container-mini-cards flex-row">
                         <div class="card-vertical card-prod-mini ">
                             <div class="card-v-header card-prod-header">
                                 <span class="badge badge-green">Best Seller</span>
@@ -232,12 +242,12 @@
                     </div>
                 </div>
 
-                <div class="container-prod">
-                    <div class="container-title">
+                <div class="container-prod flex-column">
+                    <div class="container-title flex-row">
                         <h2 class="products-trending h4-text">Your browsing history</h2>
                         <button class="btn-n-border p-lg txt-bold color-pri">View All</button>
                     </div>
-                    <div class="container-mini-cards">
+                    <div class="container-mini-cards flex-row">
                         <div class="card-vertical card-prod-mini">
                             <div class="card-v-image card-prod-image">
                                 <img class="img-responsive" src="images/optimumNutrition.png" alt="optimumNutrition"/>
@@ -267,37 +277,37 @@
                 </div>
             </div>     
         </main>
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-column">
+        <footer class="footer flex-column">
+            <div class="footer-content flex-row">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Get to know us</span>
-                    <button class="primary-btn-link p-md txt-bold">Contact</button>
-                    <button class="primary-btn-link p-md txt-bold">About Us</button>
-                    <button class="primary-btn-link p-md txt-bold">Careers</button>
-                    <button class="primary-btn-link p-md txt-bold">Press Releases</button>
-                    <button class="primary-btn-link p-md txt-bold">Stories</button>
+                    <a class="txt-pri p-md txt-bold" href="">Contact</a>
+                    <a class="txt-pri p-md txt-bold" href="">About Us</a>
+                    <a class="txt-pri p-md txt-bold" href="">Careers</a>
+                    <a class="txt-pri p-md txt-bold" href="">Press Releases</a>
+                    <a class="txt-pri p-md txt-bold" href="">Stories</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Help</span>
-                    <button class="primary-btn-link p-md txt-bold">Payments</button>
-                    <button class="primary-btn-link p-md txt-bold">Shipping</button>
-                    <button class="primary-btn-link p-md txt-bold">Cancellations & Returns</button>
-                    <button class="primary-btn-link p-md txt-bold">FAQs</button>
+                    <a class="txt-pri p-md txt-bold" href="">Payments</a>
+                    <a class="txt-pri p-md txt-bold" href="">Shipping</a>
+                    <a class="txt-pri p-md txt-bold" href="">Cancellations & Returns</a>
+                    <a class="txt-pri p-md txt-bold" href="">FAQs</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Policy</span>
-                    <button class="primary-btn-link p-md txt-bold">Returns</button>
-                    <button class="primary-btn-link p-md txt-bold">Terms of Use</button>
-                    <button class="primary-btn-link p-md txt-bold">Security</button>
-                    <button class="primary-btn-link p-md txt-bold">Privacy</button>
+                    <a class="txt-pri p-md txt-bold" href="">Returns</a>
+                    <a class="txt-pri p-md txt-bold" href="">Terms of Use</a>
+                    <a class="txt-pri p-md txt-bold" href="">Security</a>
+                    <a class="txt-pri p-md txt-bold" href="">Privacy</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex-column">
                     <span class="footer-headings txt-bold p-lg">Social</span>
-                    <button class="primary-btn-link p-md txt-bold">Facebook</button>
-                    <button class="primary-btn-link p-md txt-bold">Instagram</button>
-                    <button class="primary-btn-link p-md txt-bold">Twitter</button>
-                    <button class="primary-btn-link p-md txt-bold">Youtube</button>
-                    <button class="primary-btn-link p-md txt-bold">LinkedIn</button>
+                    <a class="txt-pri p-md txt-bold" href="">Facebook</a>
+                    <a class="txt-pri p-md txt-bold" href="">Instagram</a>
+                    <a class="txt-pri p-md txt-bold" href="">Twitter</a>
+                    <a class="txt-pri p-md txt-bold" href="">Youtube</a>
+                    <a class="txt-pri p-md txt-bold" href="">LinkedIn</a>
                 </div>
             </div>
             <div class="footer-tagline">

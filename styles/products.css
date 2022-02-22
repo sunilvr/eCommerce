@@ -1,13 +1,92 @@
+.main-products{
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "side-area main-area";
+}
+
+.main-products .side-bar-prod{
+  grid-area: side-area;
+  padding-left: 1rem;
+  width: 18rem;
+  overflow-y: auto;
+  height: calc(100vh - 7rem -2.5rem);
+  height:auto;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  position: static;
+  box-shadow: 0 0 10px var(--color-box-shadow);
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.side-bar-prod h2{
+  font-size: 1.5rem;
+}
+
+.side-bar-prod ul{
+  list-style: none;
+  line-height:200%;
+}
+
+.side-bar-prod .side-nav ul li{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.side-bar-prod a:hover{
+  color:var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  width:auto;
+  padding:0.5rem;
+}
+
+.side-bar-title{
+  justify-content: space-between;
+}
+
+.prod-items{
+  grid-area: main-area;
+}
+
 .card-prod-mini {
   max-width: 15rem;
   min-height: 15rem;
   height:auto;
 }
 
-.card-prod-header{
-    margin:0.1rem 0.1rem;
+.card-v-content{
+  margin-top: 0;
+}
+
+.prod-items .card-v-content p{
+  margin: 0.4rem;
+}
+
+.prod-items .card-v-image{
+  padding: 0 0.4rem;
+}
+
+.prod-items .card-v-header{
+  align-items: center;
+}
+
+.prod-header-sec2{
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 1rem;;
 }
 
 .card-prod-image{
     min-height: 8rem;
+}
+
+.container-prod-mini{
+  gap: 1rem;
+  width: 95%;
+  margin-top: 0.3rem;
 }

@@ -15,27 +15,33 @@
     <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper-landing">
-        <header class="header">
+    <div class="flex-column">
+        <header class="header flex-row">
             <div class="logo-title">
-                <button class="btn-n-border">
-                    <a class="color-pri" href="index.html">
-                        <h1>
-                            <span class="txt-italic">fit</span><span class="p-xlg txt-italic color-b"> factory</span>
-                        </h1>
-                    </a>
-                </button>
+                <a href="index.html">
+                    <h2 class="h2-text">
+                        <span class="txt-italic txt-pri">fit</span><span class="p-xlg txt-italic color-black"> factory</span>
+                    </h2>
+                </a>
             </div>
             <div class="search-product">
-                <form class="search-bar">
+                <form class="search-bar flex-row">
                     <input type="text" placeholder="Search for products, brands and more" name="search"></input>
                     <button class="primary-btn-icon" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <div class="header-utilities">
-                <button class="primary-btn-link p-lg txt-bold">
-                    <a class="color-pri" href="login.html">Account</a>
-                </button>
+            <div class="header-utilities flex-row">
+                <div class="dropdown">
+                    <button class="primary-btn-link p-lg">
+                        <span class="badge-icon">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </span> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Logout</a>
+                        <a href="signup.html">Register New</a>
+                    </div>
+                </div>
                 <button class="primary-btn-link"><span class="p-lg">Returns</span><br><span class="txt-bold p-lg">& Orders</span></button>
                 <button class="primary-btn-icon">
                     <a class="color-pri" href="wishlist.html">
@@ -66,8 +72,8 @@
                   <label>
                     <input type="checkbox" checked="checked" name="remember"> By creating an account you agree to our <br> <a class="terms" href="#">Terms & Privacy</a>
                   </label>         
-                  <button class="btn txt-bold color-pri p-lg">Create Account</button>
-                  <p class="p-md">Already have an account ? <a class="color-pri txt-md" href="login.html">Login</a></p>
+                  <button class="btn txt-bold color-pri p-md">Create Account</button>
+                  <p class="p-md">Already have an account ? <a class="color-pri txt-md txt-bold" href="login.html">Login</a></p>
                 </div>
             </form>
         </main>
